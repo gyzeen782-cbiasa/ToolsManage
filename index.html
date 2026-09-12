@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="description" content="Profit Kalkukator App - pencatatan stok dan kalkulator keuntungan offline.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Profit Kalkukator App</title>
+</head>
+<body>
+  <div id="toast-container"></div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">WendStudio</p>
+        <h1>Profit Kalkukator</h1>
+      </div>
+      <button class="icon-btn" id="theme-toggle" aria-label="Ganti tema">☀️</button>
+    </header>
+
+    <main id="app-content"></main>
+
+    <nav class="bottom-nav" aria-label="Navigasi utama">
+      <button class="nav-item active" data-page="home"><span>⌂</span><small>Beranda</small></button>
+      <button class="nav-item" data-page="files"><span>▣</span><small>File</small></button>
+      <button class="nav-item" data-page="calculator"><span>⌗</span><small>Kalkulator</small></button>
+      <button class="nav-item" data-page="notes"><span>✎</span><small>Catatan</small></button>
+      <button class="nav-item" data-page="settings"><span>⚙</span><small>Pengaturan</small></button>
+    </nav>
+  </div>
+
+  <div class="modal-backdrop hidden" id="modal-backdrop">
+    <section class="modal" id="modal-box" role="dialog" aria-modal="true"></section>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/calculations.js"></script>
+  <script src="js/file-manager.js"></script>
+  <script src="js/table-manager.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/notes.js"></script>
+  <script src="js/backup.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
